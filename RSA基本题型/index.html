@@ -605,6 +605,7 @@ c=[c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19]
                 m=gmpy2.powmod(c[i],d,n[i])
                 print(libnum.n2s.(int(m)))
 </code></pre>
+
 <hr />
 <h1 id="_7">维纳攻击</h1>
 <ul>
@@ -698,17 +699,13 @@ n=p*q
 m=pow(c,d,n)
 print(libnum.n2s(int(m)))
 </code></pre>
-### [NPUCTF2020]EzRSA
+<hr />
+<h1 id="NPUCTF2020">[NPUCTF2020]EzRSA</h1>
+<ul>e和phi不互素
+<li>$$			 e=2*e1\\\mathrm{2d}=2e1*phi\\\mathrm{m1}=c^{2d}mod(n)\\\mathrm{m}=\sqrt{m1}
+	$$
+					
 
-lcm(p-1,q-1) * gcd(p-1,q-1)=(p-1) * (q-1)*两数最小公倍数和最大公因数的乘积等于两数乘积*
-
-考点：e和phi不互素
-$$
-e=2*e1
-\\\mathrm{2d}=2e1*phi
-\\\mathrm{m1}=c^{2d}mod(n)
-\\\mathrm{m}=\sqrt{m1}
-$$
 
 
             </article>
