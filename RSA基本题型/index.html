@@ -698,8 +698,19 @@ n=p*q
 m=pow(c,d,n)
 print(libnum.n2s(int(m)))
 </code></pre>
+### [NPUCTF2020]EzRSA
 
-未完待续              
+lcm(p-1,q-1) * gcd(p-1,q-1)=(p-1) * (q-1)*两数最小公倍数和最大公因数的乘积等于两数乘积*
+
+考点：e和phi不互素
+$$
+e=2*e1
+\\\mathrm{2d}=2e1*phi
+\\\mathrm{m1}=c^{2d}mod(n)
+\\\mathrm{m}=\sqrt{m1}
+$$
+
+
             </article>
           </div>
         </div>
